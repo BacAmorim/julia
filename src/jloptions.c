@@ -546,6 +546,10 @@ restart_switch:
             jl_options.outputo = optarg;
             if (!jl_options.image_file_specified) jl_options.image_file = NULL;
             break;
+        case opt_output_asm:
+            jl_options.outputasm = optarg;
+            if (!jl_options.image_file_specified) jl_options.image_file = NULL;
+            break;
         case opt_output_ji:
             jl_options.outputji = optarg;
             if (!jl_options.image_file_specified) jl_options.image_file = NULL;
